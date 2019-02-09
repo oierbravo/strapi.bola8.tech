@@ -1,0 +1,24 @@
+{
+  "connection": "default",
+  "collectionName": "paginas",
+  "info": {
+    "name": "pagina",
+    "description": "Pagina basica."
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Title": {
+      "default": "",
+      "unique": true,
+      "type": "string"
+    },
+    "Body": {
+      "default": "",
+      "type": "text"
+    }
+  }
+}

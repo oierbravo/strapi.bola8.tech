@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "personas",
+  "info": {
+    "name": "persona",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Name": {
+      "default": "",
+      "type": "string"
+    },
+    "Email": {
+      "default": "",
+      "unique": true,
+      "type": "email",
+      "required": true
+    },
+    "Foto": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
